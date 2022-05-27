@@ -1,0 +1,224 @@
+# TASK -1
+
+A) 3 men and 2 women
+  6C3 * 4C2                                 nCr= n!/r!(n-r)!         [n=6, r=3]     [n=4, r=2]
+ 
+ = [6!/3!(6-3)!] * [4!/2!(4-2)!]
+ = (6!/3!*3!) * (4!/2!*2!)
+ =  (720/36) * (24/4)
+ = 20 * 6
+= 120
+
+B) Men only means
+ 6C5                                     nCr=n!/r!(n-r)!         [n=6, r=5]
+   = 6!/5!(6-5)!
+   = 6!/5!*1!
+   = 720/120*1
+   = 6
+
+C) Majority of women means
+= (3 women 2 men) or (4 women 1 men)       [ nCr = n!/r!(n-r)! ]
+[4C3: n=4,r=3]     [6C2: n=6,r=2]   [4C4: n&r=4] [6C1: n=6,r=1]
+ 
+= (4C3 * 6C2) + (4C4 * 6C1)
+= [{4!/3!(4-3!} *{ 6!/2!(6-2)!}] + [{4!/4!(4-4)!} * {6!/1!(6-1)!}]
+= [(4!/3!*1!) * (6!/ 2!*4!)] + [(4!/4!*1) * (6!/1!*5!)]
+= [(24/6) * (720/48)] + [(24/24) * (720/120)]
+= [4*15) + [1*6]
+= 60 + 6
+= 66
+
+So, Correct option is B. a)120, b)6, c)66
+
+# TASK- 2
+ 5 cards selected from 52 means,
+  52C5                                [ nCr = n!/r!(n-r)! ]       [52C5: n=52, r=5]
+= 52!/5!(52-5)!
+= 52!/5!*47!
+=52*51*50*49*48*47! / 5!*47!      [ 47! cancelled from numerator and denominator]
+=52*51*50*49*48 / 5!
+= 311875200 / 120
+=2598960
+
+ So, correct answer is 3)2598960
+
+
+# TASK- 3
+
+3 positions to be arranged out of 8 means,
+8P3                                                 [nPr = n!/(n-r)!]      [8P3: n=8, r=3]
+=8!/(8-3)!
+=8!/5!
+=40320/120
+=336
+
+So, the correct option is 2)336
+
+or optional way:
+
+There are 8 choices for 1st(Gold) if that got filled then there are 7 choices for 2nd (Silver) if that also got filled then there are
+only 6 choices for 3rd(Bronze),
+Means we can 8 * 7 * 6 = 336  
+  
+
+# TASK- 4
+ There are total 15 students.
+ If all 15 students sit together= 15!= 1307674368000
+ If Jenny and David sit together = 14! * 2
+                                 = 87178291200 * 2
+                                 = 174356582400
+ Ways when Jenny and David don't sit together = 1307674368000 - 174356582400
+                                              = 1133317785600
+So, the correct option is 4) 1133317785600
+
+# TASK- 5
+
+There are 36 possible outcomes(6*6). Two dice rolls are independent events.
+ Events gettice thrice on another dice {(1,3),(2,6),(3,1),(6,2)} = 4
+
+Therefore, probability of getting thrice of the another dice = 4/36 = 1/9
+ 
+So, the correct answer is 3)1/9
+
+
+# TASK- 6
+
+There are 7 Consonant and 4 vowels
+words can be formed with 3 Consonants and 2 vowels :
+=7C3 * 4C2                                                  [nCr= n!/r!(n-r)!]      [7C3: n=7,r=3] [4C2: n=4, r=2]
+=(7!/(7-3)!3! * 4!/(4-2)!2!
+=(7!/3!4!) * (4!/2!2!)
+=(5040/144) * (24/4)
+= 35 * 6
+=210
+
+numbers of groups each having 3 consonants and 2 vowels = 210
+ Each group contains 5 letters
+number of ways of arranging 5 letters among themselves = 5P5=5!/(5-5)!=5!
+                                                       = 5*4*3*2*1
+                                                       = 120
+Therefore, required number of ways =(210*120) = 25200
+
+# TASK- 7
+Total number of persons = 12
+and number of persons to be selected = 5                        [ nCr = n!/r!(n-r)! ]    [12C1: n=12, r=1 ]
+Out of 12 persons a chairperson is selected =12C1
+                                            = 12!/1!(12-1)!
+                                            = 12!/11!1!
+                                            = 12 ways  
+Now, remaining 4 persons are selected out of 11 persons
+= number of ways = 11C4                                        [nCr = n!/r!(n-r)! ] [11C4: n=11, r= 4]
+                 = 11!/4!(11-4)!
+                 = 11!/4!*7!
+                 = 11*10*9*8*7!/4!*7!
+                 = 7920/24
+                 = 330  
+=Total number of ways to form a commiittee of 5 persons = 12*330 = 3960
+
+# TASK- 8
+Pack of 25 bulbs 25 % has defect. If 1 bulb has drawn the left 24. A defect wasn't drawn the first time.
+There are now 24 left, but still the original 6 defects. (25% of 24 is = 6)
+So, the chance that the next bulb is not defective is (24-6)/24 = 18/24
+
+
+# TASK- 9
+
+Total no of vehicles = 150
+Cars= 80
+Vans= 50
+Lorry= 20
+
+A) Let S be the sample space and A be the event of a van leaving first.
+   n(S) = 150
+   n(A) = 50
+   Probability of a van leaving first:
+   P(A) = 50/150 = 1/3
+
+B) n(S) = 150
+   N(B) = 20
+   Probability of a lorry leaving first:
+   P(B) = 20/150 = 2/15
+
+C) If either a lorry or van had left first, then there would be 149 vehicles remaining, 80 of which are cars.  
+   Let T be the sample space and C be the event of a car leaving second
+   n(T)=149, n(C)= 80
+   Probability of a car leaving after a lorry or van has left:
+   p(C)= 80/149
+
+# TASK- 10
+
+Let S be the Sample space and A be the event of a class having 2 left-handed students.
+
+n(S) = 30
+N(A) = 8
+P(A) = 8/30 = 4/15
+
+B) n(A) = 12+5+2=19
+   P(A) = 19/30 = 19/30
+
+# TASK- 11
+
+ As given, length of the square =2X
+ So, Area of square= 4X^2
+Random point selected at triangle.
+ suppose, if b(base) = x
+and h(height)= x
+then area of triangle= 1/2x^2
+
+Probability of the point lying inside the triangle ABR= Area of triangle / area of square
+                                                      = (1/2x^2) / 4X^2
+                                                      = 1/8
+
+#TASK - 12
+If two dice are rolled
+Then n(S) = 36
+If two dice are rolled then there is nothing that we get sum equal 1
+So n(A) = 0
+Therefore, probability of get sum of 1 = 0/36 = 0
+
+If the sum equal to 4            
+Then n(A) = 3                      (1,3), (3,1),(2,2)
+Therefore, Probability = 3/36 = 1/12
+
+If the sum equal to less than 13
+Then n(A) = 36
+Because the maximum number in dice is six and they rolled the maximum time we get 6+6 =12
+Then all are less than 13
+Therefore, Probability of getting sum qual to less than 13 is = 36/36 = 1    
+
+
+# TASK- 13
+
+ 1) Even numbers between 1-20= ( 2,4,6,8,10,12,14,16,18,20)= 10
+    Probability of getting even number = 10/20= 1/2
+
+ 2)Total no of tickets= 20
+ No of outcomes that are divisible by 3= (3,6,9,12,15,18)=6
+ Probability =6/20 = 3/10
+
+3) A is event of getting prime number between 1 to 20
+    No of Prime numbers from 1-20 = (2,3,5,7,11,13,17,19)=8
+    Probability= 8/20=2/5
+
+4)No of outcomes that are divisible by 5= (5,10,15,20)=
+ Probability =4/20 = 1/5
+
+
+# TASK- 14
+
+When rolling 3 dice  there are equally possibility = 6^3= 6*6*6= 216
+In these 216 outcomes, sum of 11 are (1,4,6),(1,5,5),(1,6,4),(2,3,6),(2,4,5),(2,5,4),(2,6,3),(3,2,6),(3,3,5),(3,4,4),(3,5,3),(3,6,2),
+(4,1,6),(4,2,5),(4,3,4),(4,4,3),(4,5,2),(4,6,1),(5,1,5),(5,2,4),(5,3,3),(5,4,2),(5,5,1), (6,1,4), (6,2,3), (6,3,2), (6,4,1) = 27
+
+Probability of getting sum of 11 = 27/216 = 1/8 = 12.50%
+
+In these 216 outcomes, sum of 12 are (1,5,6),(1,6,5),(2,4,6),(2,5,5),(2,6,4),(3,3,6),(3,4,5),(3,5,4),(3,6,3),(4,2,6),(4,3,5),(4,4,4),(4,5,3),(4,6,2)
+(5,1,6),(5,2,5),(5,3,4),(5,4,3),(5,5,2),(5,6,1),(6,1,5),(6,2,4),(6,3,3),(6,4,2),(6,5,1)= 25
+
+Probability of getting sum of 12= 25/216= 11.57%
+
+So, sum of 11 will occur more probably
+
+
+      
+
